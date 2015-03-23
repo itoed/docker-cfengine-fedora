@@ -5,4 +5,4 @@ RUN rpm --import http://cfengine.com/pub/gpg.key
 ADD cfengine-community.repo /etc/yum.repos.d/
 
 # Yum packages
-RUN yum install -y cfengine-community ; yum clean all
+RUN yum install -y cfengine-community git ; yum clean all
